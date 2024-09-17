@@ -4,12 +4,12 @@ import '../models/user.dart';
 
 abstract class DatabaseRepository {
   // Einen User zur App hinzufügen (registrieren) (addUser)
-  void addUser(String userName, String password, String email);
+  void addUser(User user);
 
-  // Die Daten eines Users anpassen (editUser)
+  // Daten eines Users anpassen (editUser)
   void editUser(User user);
 
-  // Username ändern (changeUserName) (Optional, falls benötigt)
+  // Username ändern (changeUserName) (Optional)
   // void changeUserName(String newUserName);
 
   // Logindaten eines Benutzers überprüfen (checkUserCredentials)
@@ -19,12 +19,12 @@ abstract class DatabaseRepository {
   void addRecipe(Recipe newRecipe);
 
   // Rezept aktualisieren (updateRecipe)
-  void updateRecipe(String recipeId, Recipe updatedRecipe);
+  void updateRecipe(Recipe updatedRecipe);
 
   // Alle Rezepte abrufen (getAllRecipes)
   List<Recipe> getAllRecipes();
 
-  // Alle Benutzer abrufen (getAllUsers)
+  //Alle Benutzer abrufen (getAllUsers)(Optional)
   //List<User> getAllUsers();
 
   // Rezept löschen (removeRecipe)
