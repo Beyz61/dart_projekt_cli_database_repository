@@ -30,7 +30,7 @@ void main() {
   ));
   List<Recipe> allRecipes = mockdatabase.getAllRecipes();
   print(allRecipes);
-/*
+
   print("Herzlich Willkommen bei Foodie :)");
   registration user = registration();
   if (!user.registrieren()) {
@@ -67,5 +67,4 @@ void main() {
   User beyz = User(email: "beyz.61@", password: "6161", name: "beyz");
 
   beyz.showUserInfo();
-  */
 }

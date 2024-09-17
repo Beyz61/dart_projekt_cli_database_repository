@@ -19,7 +19,7 @@ class MockDatabase implements DatabaseRepository {
   }
 
   @override
-  void addUser(String userName, String password, String email) {}
+  void addUser(User user) {}
 
   @override
   bool checkUserCredentials(String userName, String password, String email) {
@@ -43,5 +43,5 @@ class MockDatabase implements DatabaseRepository {
   void removeUser(String recipeId) {}
 
   @override
-  void updateRecipe(String recipeId, Recipe updatedRecipe) {}
+  void updateRecipe(Recipe updatedRecipe) {}
 }
